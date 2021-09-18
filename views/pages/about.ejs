@@ -24,15 +24,8 @@
         </figure>
     </header>
 
-    <nav class="categories">
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="kitchens/italian/index.html">Italian</a></li>
-            <li><a href="kitchens/japanese/index.html">Japanese</a></li>
-            <li> <a href="kitchens/russian/index.html">Russian</a></li>
-            <li> <a href="kitchens/turkish/index.html">Turkish</a></li>
-        </ul>
-    </nav>
+    <%- include ("../partials/categories.ejs")%>
+
 
     <main>
         <section class="dishes">
@@ -85,38 +78,9 @@
             </article>
         </div>
     </main>
-    <footer>
-        <div class="footer-box">
-            <div class="footer-header">Created by</div>
-            <br>
-            <ul>
-                <li><a href="https://heidisgithub.github.io/portfolio/" target="_blank"><strong>H</strong>ayriye</a></li>
-                <li><a href="https://mangofp.net" target="_blank"><strong>A</strong>ndres</a></li>
-                <li><a href="https://raduliviu.github.io/portfolio/" target="_blank"><strong>R</strong>adu</a></li>
-                <li><a href="https://elaktrato.github.io/portfolio/" target="_blank"><strong>E</strong>rik</a></li>
-            </ul>
-        </div>
+   
+    <%- include ("../partials/footer.ejs")%>
 
-        <div class="footer-box">
-            <div class="footer-header">Follow us</div>
-            <br>
-            <img src="https://img.icons8.com/material-outlined/40/000000/instagram-new--v1.png" />
-            <img src="https://img.icons8.com/windows/40/000000/facebook.png" />
-            <img src="https://img.icons8.com/material-outlined/40/000000/youtube-play--v1.png" />
-
-        </div>
-
-        <div class="footer-box">
-            <div class="footer-header"><a href="./about.html">About</a></div>
-            <br>
-            <div>Copyright ©HARE Kitchen. All Rights Reserved.</div>
-            <div>Dataprotection</div>
-            <div>Imprint</div>
-        </div>
-
-
-
-    </footer>
 </body>
 
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <title>Italian cuisine</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <a href="../../index.html">
+                <img src="../../Images/logo.png" alt="HARE Kitchen logo">
+            </a>
+        </figure>
+    </header>
+
+    <%- include ("../../partials/categories.ejs")%>
+
+
+    <main>
+
+        <div class="dishes">
+            <% dishes.forEach(function(dish){ %>
+            <article class="dish">
+                <figure>
+                    <img src="<%= dish.imageUrl%>" alt="Pizza Recipe" style="object-position: bottom right;">
+                </figure>
+                <section class="dishwrap">
+                    <h3><%= dish.heading%></h3>
+                    <p><%= dish.description%></p>
+                    <div class="button"><a href="<%= dish.recipeUrl%>">read more</a></div>
+                </section>
+            </article>
+            <% })%>
+
+
+        
+        </div>
+    </main>
+    <%- include ("../../partials/footer.ejs")%>
+
+</body>
+
+</html>
